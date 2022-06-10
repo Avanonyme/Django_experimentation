@@ -19,7 +19,7 @@ from first_app import views as first_views
 from help import views as hviews
 
 urlpatterns = [
-    path("",first_views.index, name='index'),
+    path("",include('first_app.urls'), name='index'),
     path("help/", include('help.urls'), name='Help page'),
     path('admin/', admin.site.urls),
 ]

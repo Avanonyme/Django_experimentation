@@ -1,18 +1,14 @@
 <!DOCTYPE html>
+{%load staticfiles %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help Page</title>
-    <style>
-        body{
-            font-family:'Courier New', Courier, monospace
-        }
-    </style>
+    <title>Fractal Showroom</title>
 </head>
 <body>
-    <h1>Really thought I could help you lol</h1>
-    {{ test }}
+    <h1>Testing static files management</h1>
+    <image src="{% static "images/fractal_grayscale.png" %}" alt="Problem loading image">
 </body>
 </html>
